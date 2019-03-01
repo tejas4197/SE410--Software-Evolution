@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement />
+  <nodes>
+    <node x="103.35138888888889" y="270.0">storybook.toolkit.BookUtil</node>
+    <node x="69.5" y="90.0">storybook.ui.MainFrame</node>
+    <node x="28.178645833333334" y="190.0">storybook.SbApp</node>
+    <node x="22.678645833333334" y="0.0">storybook.SbPref</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="storybook.toolkit.BookUtil" target="storybook.ui.MainFrame">
+      <point x="0.0" y="-15.0" />
+      <point x="154.8513888888889" y="250.0" />
+      <point x="157.92916666666667" y="250.0" />
+      <point x="157.92916666666667" y="170.0" />
+      <point x="156.5" y="170.0" />
+      <point x="29.0" y="15.0" />
+    </edge>
+    <edge source="storybook.ui.MainFrame" target="storybook.toolkit.BookUtil">
+      <point x="48.33333333333333" y="15.0" />
+      <point x="175.83333333333331" y="170.0" />
+      <point x="168.92916666666667" y="170.0" />
+      <point x="168.92916666666667" y="250.0" />
+      <point x="175.45138888888889" y="250.0" />
+      <point x="20.599999999999994" y="-15.0" />
+    </edge>
+    <edge source="storybook.SbApp" target="storybook.toolkit.BookUtil">
+      <point x="22.75" y="15.0" />
+      <point x="96.42864583333333" y="240.0" />
+      <point x="134.2513888888889" y="240.0" />
+      <point x="-20.599999999999994" y="-15.0" />
+    </edge>
+    <edge source="storybook.toolkit.BookUtil" target="storybook.SbApp">
+      <point x="-41.19999999999999" y="-15.0" />
+      <point x="113.6513888888889" y="250.0" />
+      <point x="50.928645833333334" y="250.0" />
+      <point x="-22.75" y="15.0" />
+    </edge>
+    <edge source="storybook.toolkit.BookUtil" target="storybook.SbPref">
+      <point x="41.2" y="-15.0" />
+      <point x="196.0" y="60.0" />
+      <point x="106.09531249999998" y="60.0" />
+      <point x="37.91666666666664" y="15.0" />
+    </edge>
+    <edge source="storybook.SbPref" target="storybook.SbApp">
+      <point x="-22.75" y="15.0" />
+      <point x="45.428645833333334" y="50.0" />
+      <point x="37.0" y="50.0" />
+      <point x="37.0" y="160.0" />
+      <point x="45.241145833333334" y="160.0" />
+      <point x="-28.4375" y="-15.0" />
+    </edge>
+    <edge source="storybook.ui.MainFrame" target="storybook.SbPref">
+      <point x="0.0" y="-15.0" />
+      <point x="127.5" y="70.0" />
+      <point x="90.92864583333332" y="70.0" />
+      <point x="22.749999999999986" y="15.0" />
+    </edge>
+    <edge source="storybook.SbApp" target="storybook.SbPref">
+      <point x="-39.8125" y="-15.0" />
+      <point x="33.866145833333334" y="170.0" />
+      <point x="26.0" y="170.0" />
+      <point x="26.0" y="70.0" />
+      <point x="30.261979166666663" y="70.0" />
+      <point x="-37.91666666666667" y="15.0" />
+    </edge>
+    <edge source="storybook.ui.MainFrame" target="storybook.SbApp">
+      <point x="9.666666666666671" y="15.0" />
+      <point x="137.16666666666669" y="170.0" />
+      <point x="113.49114583333333" y="170.0" />
+      <point x="39.8125" y="-15.0" />
+    </edge>
+    <edge source="storybook.SbApp" target="storybook.ui.MainFrame">
+      <point x="5.6875" y="-15.0" />
+      <point x="-48.33333333333333" y="15.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.290263997613436" x="278.17696086516304" y="109.83631756364085" />
+  <SelectedNodes>
+    <node>storybook.ui.MainFrame</node>
+  </SelectedNodes>
+  <Categories />
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
