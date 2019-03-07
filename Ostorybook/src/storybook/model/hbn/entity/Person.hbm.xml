@@ -9,6 +9,7 @@
             </generator>
     </id>
     <many-to-one cascade="none" class="storybook.model.hbn.entity.Gender" column="gender_id" insert="true" lazy="false" name="gender" outer-join="auto" update="true"/>
+    <property column="specie" insert="true" length="256" lazy="false" name="specie" type="java.lang.String" update="true"/>
     <property column="firstname" insert="true" length="256" name="firstname" type="java.lang.String" update="true"/>
     <property column="lastname" insert="true" length="256" name="lastname" type="java.lang.String" update="true"/>
     <property column="abbreviation" insert="true" length="256" name="abbreviation" type="java.lang.String" update="true"/>
