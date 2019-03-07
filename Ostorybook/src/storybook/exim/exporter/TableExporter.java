@@ -62,7 +62,7 @@ public class TableExporter extends AbstractExporter {
 		}
 		export.writeDataBase();
 	}
-	
+
 	public static void exportDB(MainFrame m) {
 		exportDB(m,"xml");
 	}
@@ -70,11 +70,11 @@ public class TableExporter extends AbstractExporter {
 	public static void exportTable(MainFrame m, SbView v) {
 		exportTable(m,v,m.getPref().getString(SbPref.Key.EXPORT_PREF,"xml"));
 	}
-	
+
 	public static void exportTable(MainFrame m, SbView v,String f) {
 		exportTable(m,v.getName(),f);
 	}
-	
+
 	public static void exportTable(MainFrame m, String v, String f) {
 		TableExporter export=new TableExporter(m,v,f);
 		if (export.askFileExists(v)) {
@@ -433,6 +433,7 @@ public class TableExporter extends AbstractExporter {
 		List<ColumnHeader> headers = new ArrayList<>();
 		headers.add(new ColumnHeader(I18N.getMsg("id"), 5));
 		headers.add(new ColumnHeader(I18N.getMsg("gender"), 16));
+		headers.add(new ColumnHeader(I18N.getMsg("specie"), 16));
 		headers.add(new ColumnHeader(I18N.getMsg("person.firstname"), 16));
 		headers.add(new ColumnHeader(I18N.getMsg("person.lastname"), 16));
 		headers.add(new ColumnHeader(I18N.getMsg("person.abbr"), 5));

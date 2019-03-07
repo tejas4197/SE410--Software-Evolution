@@ -330,6 +330,16 @@ public class SbColumnFactory {
 		col.setCompleter(abbrCompleter);
 		columns.add(col);
 
+		col = new SbColumn(i++, "Specie", "person.specie");
+		col.setMaxLength(255);
+		col.setGrowX(true);
+		VerifierGroup group3 = new VerifierGroup();
+		group3.addVerifier(new NotEmptyVerifier());
+		group3.addVerifier(new LengthVerifier(col.getMaxLength()));
+		col.setVerifier(group3);
+		col.setDefaultSort(true);
+		columns.add(col);
+
 		col = new SbColumn(i++, "Gender", InputType.COMBOBOX, "manage.persons.gender");
 		col.setTableCellRenderer(new GenderTableCellRenderer());
 		columns.add(col);
