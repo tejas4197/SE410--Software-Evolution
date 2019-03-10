@@ -3,13 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="ede02c2c-a04d-47ac-80dd-2cd77b6e03b7" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/storybook/exim/exporter/TableExporter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/storybook/exim/exporter/TableExporter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/storybook/model/hbn/dao/PersonDAOImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/storybook/model/hbn/dao/PersonDAOImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/storybook/model/hbn/entity/Person.hbm.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/storybook/model/hbn/entity/Person.hbm.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/storybook/model/hbn/entity/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/storybook/model/hbn/entity/Person.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/storybook/msg/messages.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/storybook/msg/messages.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/storybook/ui/panel/tree/TreePanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/storybook/ui/panel/tree/TreePanel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/storybook/ui/table/SbColumnFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/storybook/ui/table/SbColumnFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/storybook/ui/dialog/ReplaceDlg.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/storybook/ui/dialog/ReplaceDlg.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/bin/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -20,87 +14,56 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/storybook/model/hbn/entity/Person.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="160">
-              <caret line="42" column="36" lean-forward="true" selection-start-line="42" selection-start-column="36" selection-end-line="42" selection-end-column="36" />
-              <folding>
-                <element signature="e#2723#2724#0" expanded="true" />
-                <element signature="e#2756#2757#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="396">
+              <caret line="334" column="47" selection-start-line="334" selection-start-column="47" selection-end-line="334" selection-end-column="47" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_101.jdk/Contents/Home/jre/lib/rt.jar!/sun/reflect/NativeMethodAccessorImpl.class">
+        <entry file="file://$PROJECT_DIR$/src/org/jdesktop/swingx/JXList.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="248">
-              <caret line="26" selection-start-line="26" selection-end-line="26" />
+            <state relative-caret-position="669">
+              <caret line="139" column="20" lean-forward="true" selection-start-line="139" selection-start-column="20" selection-end-line="139" selection-end-column="20" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_101.jdk/Contents/Home/src.zip!/java/lang/reflect/Method.java">
+        <entry file="file://$PROJECT_DIR$/src/storybook/ui/dialog/ReplaceDlg.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="156">
-              <caret line="497" selection-start-line="497" selection-end-line="497" />
+            <state relative-caret-position="-222">
+              <caret line="664" column="73" selection-start-line="664" selection-start-column="73" selection-end-line="664" selection-end-column="73" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/org/apache/commons/beanutils/PropertyUtilsBean.java">
+        <entry file="file://$PROJECT_DIR$/src/storybook/msg/messages_cz.properties">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="156">
-              <caret line="2107" selection-start-line="2107" selection-end-line="2107" />
+            <state relative-caret-position="918">
+              <caret line="133" selection-start-line="133" selection-end-line="133" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/org/apache/commons/beanutils/BeanUtilsBean.java">
+        <entry file="file://$PROJECT_DIR$/src/storybook/exim/exporter/TableExporter.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="156">
-              <caret line="283" selection-start-line="283" selection-end-line="283" />
+            <state relative-caret-position="159">
+              <caret line="428" column="23" lean-forward="true" selection-start-line="428" selection-start-column="23" selection-end-line="428" selection-end-column="23" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/storybook/model/EntityUtil.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="164">
-              <caret line="405" selection-start-line="405" selection-end-line="405" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/storybook/ui/dialog/edit/EntityEditor.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="66">
-              <caret line="920" column="70" lean-forward="true" selection-start-line="920" selection-start-column="70" selection-end-line="920" selection-end-column="70" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/storybook/ui/table/SbColumn.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="156">
-              <caret line="52" column="15" lean-forward="true" selection-start-line="52" selection-start-column="15" selection-end-line="52" selection-end-column="15" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/storybook/ui/table/SbColumnFactory.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="241">
-              <caret line="337" column="67" lean-forward="true" selection-start-line="337" selection-start-column="67" selection-end-line="337" selection-end-column="67" />
+            <state relative-caret-position="168">
+              <caret line="405" column="36" lean-forward="true" selection-start-line="405" selection-start-column="36" selection-end-line="405" selection-end-column="36" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -139,6 +102,7 @@
       <find>new person</find>
       <find>.setText</find>
       <find>person.specie</find>
+      <find>firstName</find>
     </findStrings>
     <dirStrings>
       <dir>$PROJECT_DIR$/src</dir>
@@ -160,6 +124,7 @@
         <option value="$PROJECT_DIR$/src/storybook/ui/dialog/edit/EntityEditor.java" />
         <option value="$PROJECT_DIR$/src/storybook/ui/table/SbColumnFactory.java" />
         <option value="$PROJECT_DIR$/src/storybook/model/hbn/entity/Person.java" />
+        <option value="$PROJECT_DIR$/src/storybook/ui/dialog/ReplaceDlg.java" />
       </list>
     </option>
   </component>
@@ -248,18 +213,26 @@
               <item name="ui" type="462c0819:PsiDirectoryNode" />
               <item name="panel" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="Ostorybook" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Ostorybook" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="storybook" type="462c0819:PsiDirectoryNode" />
+              <item name="ui" type="462c0819:PsiDirectoryNode" />
+              <item name="table" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1551981861363" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1552233777551" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
   </component>
@@ -315,7 +288,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="9240000" />
+    <option name="totallyTimeSpent" value="9853000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -327,10 +300,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1680" height="958" extended-state="6" />
+    <frame x="0" y="23" width="1680" height="958" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.22954823" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.23443224" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -364,18 +337,6 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/storybook/model/hbn/entity/Person.java</url>
-          <line>99</line>
-          <properties />
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/.project">
@@ -556,13 +517,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/storybook/exim/exporter/TableExporter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="177">
-          <caret line="408" column="54" selection-start-line="408" selection-start-column="50" selection-end-line="408" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/storybook/exim/importer/ImportUtil.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="168">
@@ -665,12 +619,12 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/storybook/msg/messages.properties">
-      <provider editor-type-id="ResourceBundle" />
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="261">
           <caret line="654" column="20" lean-forward="true" selection-start-line="654" selection-start-column="20" selection-end-line="654" selection-end-column="20" />
         </state>
       </provider>
+      <provider editor-type-id="ResourceBundle" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/storybook/model/hbn/dao/PersonDAOImpl.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -773,23 +727,47 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/storybook/ui/table/SbColumnFactory.java">
+    <entry file="file://$PROJECT_DIR$/src/org/jdesktop/swingx/JXList.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="241">
-          <caret line="337" column="67" lean-forward="true" selection-start-line="337" selection-start-column="67" selection-end-line="337" selection-end-column="67" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="669">
+          <caret line="139" column="20" lean-forward="true" selection-start-line="139" selection-start-column="20" selection-end-line="139" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/storybook/ui/dialog/ReplaceDlg.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-222">
+          <caret line="664" column="73" selection-start-line="664" selection-start-column="73" selection-end-line="664" selection-end-column="73" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/storybook/msg/messages_cz.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="918">
+          <caret line="133" selection-start-line="133" selection-end-line="133" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/storybook/exim/exporter/TableExporter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="159">
+          <caret line="428" column="23" lean-forward="true" selection-start-line="428" selection-start-column="23" selection-end-line="428" selection-end-column="23" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/storybook/model/hbn/entity/Person.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="42" column="36" lean-forward="true" selection-start-line="42" selection-start-column="36" selection-end-line="42" selection-end-column="36" />
+        <state relative-caret-position="396">
+          <caret line="334" column="47" selection-start-line="334" selection-start-column="47" selection-end-line="334" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/storybook/ui/table/SbColumnFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="405" column="36" lean-forward="true" selection-start-line="405" selection-start-column="36" selection-end-line="405" selection-end-column="36" />
           <folding>
-            <element signature="e#2723#2724#0" expanded="true" />
-            <element signature="e#2756#2757#0" expanded="true" />
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
