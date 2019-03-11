@@ -17,6 +17,9 @@
  */
 package storybook.ui.dialog.edit;
 
+import org.hibernate.Session;
+import storybook.model.BookModel;
+import storybook.model.hbn.dao.LocationDAOImpl;
 import storybook.ui.dialog.TitlePanel;
 import storybook.ui.dialog.edit.panel.CheckBoxPanel;
 import storybook.ui.dialog.edit.panel.CbPanelDecorator;
@@ -1244,6 +1247,20 @@ public class EntityEditor extends AbstractPanel implements ActionListener, ItemL
 		SbApp.trace("EntityEditor.addOrUpdateEntity()");
 		try {
 			updateEntityFromInputComponents();
+			if (entity instanceof Location) {
+				BookModel model = mainFrame.getBookModel();
+				Session session = model.beginTransaction();
+				LocationDAOImpl dao = new LocationDAOImpl(session);
+				List<Location> locations = dao.findAll();
+				Location entityLocation = (Location) entity;
+
+				for(Location location : locations) {
+					if(location.equalTo(entityLocation)) {
+						errorState = ErrorState.WARNING;
+						return;
+					}
+				}
+			}
 			if (entity.isTransient()) {
 				verifyInput();
 				if (errorState == ErrorState.ERROR) {
@@ -1355,6 +1372,11 @@ public class EntityEditor extends AbstractPanel implements ActionListener, ItemL
 		} else if (ComponentName.BT_OK.check(compName)) {
 			addOrUpdateEntity();
 			if (errorState == ErrorState.ERROR) {
+				return;
+			} else if(errorState ==  ErrorState.WARNING) {
+				JOptionPane.showMessageDialog(this,
+						I18N.getMsg("location.duplicate"),
+						I18N.getMsg("warning"), JOptionPane.WARNING_MESSAGE);
 				return;
 			}
 			unloadEntity();
