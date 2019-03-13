@@ -660,6 +660,10 @@ public class ReplaceDlg extends AbstractDialog {
 			b=true;
 			entity.setLastname(entity.getLastname().replace(words, bywords));
 		}
+		if (entity.getSpecie().contains(words)) {
+			b=true;
+			entity.setSpecie(entity.getSpecie().replace(words, bywords));
+		}
 		if (entity.getOccupation().contains(words)) {
 			b=true;
 			entity.setOccupation(entity.getOccupation().replace(words, bywords));

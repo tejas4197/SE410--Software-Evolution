@@ -69,6 +69,23 @@ public class PersonDAOImpl extends SbGenericDAOImpl<Person, Long> implements Per
 	}
 
 	@SuppressWarnings("unchecked")
+	public List<Person> findBySpecie(String specie) {
+		Criteria crit = session.createCriteria(Person.class);
+		crit.add(Restrictions.eq("specie", specie));
+		crit.addOrder(Order.asc("specie"));
+		List<Person> persons = (List<Person>) crit.list();
+		return persons;
+	}
+
+	@SuppressWarnings("unchecked")
+	public List<AbstractEntity> findAllBySpecies() {
+		Criteria crit = session.createCriteria(Person.class);
+		crit.addOrder(Order.asc("specie"));
+		List<AbstractEntity> persons = (List<AbstractEntity>) crit.list();
+		return persons;
+	}
+
+	@SuppressWarnings("unchecked")
 	public List<Person> findByCategory(Category category) {
 		Criteria crit = session.createCriteria(Person.class);
 		crit.add(Restrictions.eq("category", category));

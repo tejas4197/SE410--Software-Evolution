@@ -26,11 +26,8 @@ import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
 import java.beans.PropertyChangeEvent;
-import java.util.ArrayList;
-import java.util.Enumeration;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
+import java.util.stream.Collectors;
 
 import javax.swing.AbstractAction;
 import javax.swing.JComponent;
@@ -121,6 +118,7 @@ public class TreePanel extends AbstractPanel implements TreeSelectionListener, M
 	private List<ToggleIconButton> toggleButtonList;
 
 	private DefaultMutableTreeNode topNode;
+	private EntityNode personsBySpecieNode;
 	private EntityNode personsByCategoryNode;
 	private EntityNode personsByGendersNode;
 	private EntityNode locationsNode;
@@ -323,6 +321,9 @@ public class TreePanel extends AbstractPanel implements TreeSelectionListener, M
 		topNode.removeAllChildren();
 
 		if (btTooglePersons.isSelected()) {
+			personsBySpecieNode = new EntityNode("tree.persons.by.specie", new Person());
+			topNode.add(personsBySpecieNode);
+			refreshPersonsBySpecie();
 			personsByCategoryNode = new EntityNode("tree.persons.by.category", new Person());
 			topNode.add(personsByCategoryNode);
 			refreshPersonsByCategory();
@@ -470,6 +471,54 @@ public class TreePanel extends AbstractPanel implements TreeSelectionListener, M
 		}
 		model.commit();
 	}
+
+//	private void refreshPersonsBySpecie() {
+//		Map<String, DefaultMutableTreeNode> specieMap = new HashMap<String, DefaultMutableTreeNode>();
+//		BookModel model = mainFrame.getBookModel();
+//		Session session = model.beginTransaction();
+//		PersonDAOImpl personDAO = new PersonDAOImpl(session);
+//		List<Person> allPersons = personDAO.findAll();
+//
+//		//get species (no duplicates)
+//		List<String> allSpecies = allPersons.stream().map(person -> person.getSpecie()).collect(Collectors.toList());
+//		Set<String> species = new HashSet<>(allSpecies);
+//
+//		for (String specie : species) {
+//			getPersonsBySpecieNodeOwner(specieMap, specie);
+//		}
+//		for (String specie : species) {
+//			DefaultMutableTreeNode specieNode = specieMap.get(specie);
+//			List<Person> persons = personDAO.findBySpecie(specie);
+//			for (Person person : persons) {
+//				DefaultMutableTreeNode personNode = new DefaultMutableTreeNode(person);
+//				specieNode.add(personNode);
+//			}
+//		}
+//		model.commit();
+//	}
+
+	private void refreshPersonsBySpecie() {
+		BookModel model = mainFrame.getBookModel();
+		Session session = model.beginTransaction();
+
+		PersonDAOImpl personDAO = new PersonDAOImpl(session);
+		List<Person> allPersons = personDAO.findAll();
+
+		//get species (no duplicates)
+		List<String> allSpecies = allPersons.stream().map(person -> person.getSpecie()).collect(Collectors.toList());
+		Set<String> species = new HashSet<>(allSpecies);
+
+		for (String specie : species) {
+			DefaultMutableTreeNode specieNode = new DefaultMutableTreeNode(specie);
+			personsBySpecieNode.add(specieNode);
+			List<Person> persons = personDAO.findBySpecie(specie);
+			for (Person person : persons) {
+				DefaultMutableTreeNode personNode = new DefaultMutableTreeNode(person);
+				specieNode.add(personNode);
+			}
+		}
+		model.commit();
+	}
 		
 	private DefaultMutableTreeNode getPersonsByCategoryNodeOwner(
 			Map<Category, DefaultMutableTreeNode> categoryMap, Category category) {
@@ -491,6 +540,16 @@ public class TreePanel extends AbstractPanel implements TreeSelectionListener, M
 		}
 		return categoryNode;
 	}
+
+//	private DefaultMutableTreeNode getPersonsBySpecieNodeOwner(
+//			Map<String, DefaultMutableTreeNode> specieMap, String specie) {
+//		DefaultMutableTreeNode specieNode = specieMap.get(specie);
+//		if ( specieNode == null ) {
+//			specieNode = new DefaultMutableTreeNode(specie);
+//			specieMap.put(specie, specieNode);
+//		}
+//		return specieNode;
+//	}
 
 	private void refreshPersonsByGender() {
 		BookModel model = mainFrame.getBookModel();

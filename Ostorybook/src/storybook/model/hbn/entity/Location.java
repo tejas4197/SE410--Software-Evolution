@@ -418,4 +418,14 @@ public class Location extends AbstractEntity implements Comparable<Location> {
 		}
 		return cmp;
 	}
+
+	public boolean equalTo(Location location) {
+	    return (
+            this.getName().equalsIgnoreCase(location.getName()) &&
+            this.getAddress().equalsIgnoreCase(location.getAddress()) &&
+            this.getCity().equalsIgnoreCase(location.getCity()) &&
+            this.getCountry().equalsIgnoreCase(location.getCountry()) &&
+            this.getAltitude().equals(location.getAltitude())
+        );
+	}
 }
